@@ -45,5 +45,14 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle("Valores determinador" , fontsize = 20)
+    ax = fig.add_subplot()
+
+    ax.plot(x , y1 , c = 'g', label="Valor1")
+    ax.plot(x , y2 , c = 'b', label="Valor2")
+    ax.legend()
+    ax.grid()
+    plt.show()
 
     print("terminamos")
